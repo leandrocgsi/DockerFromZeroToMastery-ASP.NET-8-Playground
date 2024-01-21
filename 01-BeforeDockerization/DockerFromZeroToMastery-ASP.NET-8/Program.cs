@@ -23,7 +23,7 @@ using System.Text;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
-var appName = "REST API's RESTFul do 0 à Azure com ASP.NET Core 8 e Docker";
+var appName = "Docker from Zero to Mastery - Demystified Containerization";
 var appVersion = "v1";
 var appDescription = $"REST API RESTful developed in course '{appName}'";
 
@@ -91,7 +91,7 @@ builder.Services.AddSwaggerGen(c => {
 var connection = builder.Configuration["MySQLConnection:MySQLConnectionString"];
 builder.Services.AddDbContext<MySQLContext>(options => options.UseMySql(
     connection,
-    new MySqlServerVersion(new Version(8, 0,29)))
+    new MySqlServerVersion(new Version(8, 0, 29)))
 );
 
 if (builder.Environment.IsDevelopment())
@@ -142,7 +142,7 @@ app.UseCors();
 
 app.UseSwagger();
 
-app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", $"{appName} - {appVersion}");});
+app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", $"{appName} - {appVersion}"); });
 
 var option = new RewriteOptions();
 option.AddRedirect("^$", "swagger");
