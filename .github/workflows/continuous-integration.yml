@@ -17,8 +17,8 @@ jobs:
          password: ${{ secrets.DOCKER_PASSWORD }}
 
      - name: Build Images
-        working-directory: ./02-AfterDockerization/DockerFromZeroToMastery-ASP.NET-8
-        run: docker-compose build
+       working-directory: ./02-AfterDockerization/DockerFromZeroToMastery-ASP.NET-8
+       run: docker-compose build
 
      - name: Push to Docker Hub Container Registry
        run: |
