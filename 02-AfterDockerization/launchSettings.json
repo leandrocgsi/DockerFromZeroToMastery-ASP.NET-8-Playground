@@ -4,7 +4,7 @@
       "commandName": "DockerCompose",
       "commandVersion": "1.0",
       "serviceActions": {
-        "docker-from-zero-to-mastery-dotnet-pg": "StartDebugging"
+        "docker-from-zero-to-mastery-dotnet-8": "StartDebugging"
       }
     }
   }

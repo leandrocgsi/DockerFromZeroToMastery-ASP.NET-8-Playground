@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <InvariantGlobalization>true</InvariantGlobalization>
 	<RootNamespace>RestWithASPNETErudio</RootNamespace>
-	<UserSecretsId>59ec07a5-0624-4907-a034-2c2e664b0a4c</UserSecretsId>
+	<UserSecretsId>4586947c-cd70-4603-94b0-6983bb4df4fa</UserSecretsId>
 	<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 	<DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>

@@ -20,16 +20,15 @@ services:
     networks:
       - erudio-network
 
-  docker-from-zero-to-mastery-dotnet-pg:
-    image: docker-from-zero-to-mastery-dotnet-pg
-    restart: always
+  docker-from-zero-to-mastery-dotnet-8:
+    image: docker-from-zero-to-mastery-dotnet-8
     build:
       context: .
       dockerfile: DockerFromZeroToMastery-ASP.NET-8/Dockerfile
+    restart: always
     environment:
       TZ: America/Sao_Paulo
       MySQLConnection__MySQLConnectionString: "Server=db;Port=3308;DataBase=docker_from_zero_to_mastery_dotnet;Uid=docker;Pwd=docker"
-      Environment: "Development"
     ports:
       - 4430:8080
       - 44300:8081

@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  docker-from-zero-to-mastery-dotnet-pg:
+  docker-from-zero-to-mastery-dotnet-8:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=8080
