@@ -16,7 +16,7 @@ jobs:
          username: ${{ secrets.DOCKER_USERNAME }}
          password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build Images
+     - name: Build Images
         working-directory: ./02-AfterDockerization/DockerFromZeroToMastery-ASP.NET-8
         run: docker-compose build
 
