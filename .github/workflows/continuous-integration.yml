@@ -23,7 +23,11 @@ jobs:
      - name: Push to Docker Hub Container Registry
        run: |
          docker tag docker-from-zero-to-mastery-dotnet-8:latest ${{ secrets.DOCKER_USERNAME }}/docker-from-zero-to-mastery-dotnet:latest
-         docker tag docker-from-zero-to-mastery-dotnet-8:latest ${{ secrets.DOCKER_USERNAME }}/docker-from-zero-to-mastery-dotnet:${{ github.run_id }}
+         docker tag docker-from-zero-to-mastery-dotnet-8:latest ${{ secrets.DOCKER_USERNAME }}/docker-from-zero-to-mastery-dotnet:${{ github.run_id }}docker tag docker-from-zero-to-mastery-dotnet-8:latest ${{ secrets.DOCKER_USERNAME }}/docker-from-zero-to-mastery-dotnet:latest
+         docker tag docker-from-zero-to-mastery-dotnet-8-db:latest ${{ secrets.DOCKER_USERNAME }}/docker-from-zero-to-mastery-dotnet-8-db:latest
+         docker tag docker-from-zero-to-mastery-dotnet-8-db:latest ${{ secrets.DOCKER_USERNAME }}/docker-from-zero-to-mastery-dotnet-8-db:${{ github.run_id }}
          
          docker push ${{ secrets.DOCKER_USERNAME }}/docker-from-zero-to-mastery-dotnet:latest
          docker push ${{ secrets.DOCKER_USERNAME }}/docker-from-zero-to-mastery-dotnet:${{ github.run_id }}
+         docker push ${{ secrets.DOCKER_USERNAME }}/docker-from-zero-to-mastery-dotnet-8-db:latest
+         docker push ${{ secrets.DOCKER_USERNAME }}/docker-from-zero-to-mastery-dotnet-8-db:${{ github.run_id }}
