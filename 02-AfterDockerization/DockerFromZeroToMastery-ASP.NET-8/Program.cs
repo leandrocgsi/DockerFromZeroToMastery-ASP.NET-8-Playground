@@ -96,7 +96,7 @@ builder.Services.AddDbContext<MySQLContext>(options => options.UseMySql(
 
 if (builder.Environment.IsDevelopment())
 {
-    MigrateDatabase(connection);
+   // MigrateDatabase(connection);
 }
 
 builder.Services.AddMvc(options =>
